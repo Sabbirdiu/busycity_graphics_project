@@ -2496,11 +2496,6 @@ case 'd':
     glutPostRedisplay();
     break;
 
-    case 'n':
-    glutDisplayFunc(night);
-    PlaySound(TEXT("salamisound.wav"), NULL, SND_ASYNC);
-    glutPostRedisplay();
-    break;
 glutPostRedisplay();
 
 
@@ -2514,7 +2509,7 @@ glutPostRedisplay();
 int main(int argc, char** argv)
 {
     glutInit(&argc, argv);
-    glutCreateWindow("Day and Night Mode Town");
+    glutCreateWindow("Busy City");
     glutInitWindowSize(320, 320);
     glutInitWindowPosition(500, 500);
     glutDisplayFunc(day);
